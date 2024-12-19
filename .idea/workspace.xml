@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="Implemented the command-line argument fetching.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -38,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,11 +69,28 @@
       <option name="project" value="LOCAL" />
       <updated>1734522100585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project">
+      <option name="closed" value="true" />
+      <created>1734551001798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734551001798</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project">
+      <option name="closed" value="true" />
+      <created>1734551008699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734551008699</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implemented the command-line argument fetching." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented the command-line argument fetching." />
+    <MESSAGE value="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project" />
   </component>
 </project>

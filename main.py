@@ -11,7 +11,7 @@ def main():
     parser.add_argument('url', type=str, help='URL to process')
     args = parser.parse_args()
     print("Processing URL: " + args.url)
-    link = args.url #storing the url attribute as 'link' for simplicity
+    link = args.url #Storing the url attribute as 'link' for simplicity
 
 
     clone_repository(link)
@@ -37,28 +37,26 @@ def create_requirements_file(project_path):
     try:
         print(f"Generating requirements.txt for project at {project_path}...")
 
-        # Run the pipreqs command
+        #Run the pipreqs command to make a requirements text file that will be read later for the user
         result = subprocess.run(
-            ["pipreqs", project_path, "--force"],  # Command to run
-            check=True,  # Will raise an error if the command fails
-            capture_output=True,  # Captures stdout and stderr
-            text=True  # Decodes the output to a string (instead of bytes)
+            ["pipreqs", project_path, "--force"],  #The subprocess command
+            check=True,  #Will raise an error if the command fails
+            capture_output=True,  #Captures stdout and stderr
+            text=True  #Decodes the output to a string (instead of bytes)
         )
-
-        # Print the output of pipreqs (stdout)
         print(result.stdout)
         print("requirements.txt generated successfully!")
 
     except subprocess.CalledProcessError as e:
-        # If pipreqs fails, this will print the error and stderr
+        #If pipreqs fails, this will print the error and stderr
         print(f"Error during pipreqs execution: {e}")
         print(f"stderr: {e.stderr}")
     except Exception as e:
-        # For any other unexpected errors
+        #For any other unexpected errors as a safety net
         print(f"Unexpected error: {e}")
 
 
-if __name__ == "__main__":  #condition so the script doesn't run if imported as a module only if the main function is called explicitly
+if __name__ == "__main__":  #Condition so the script doesn't run if imported as a module only if the main function is called explicitly
     main()
 
 

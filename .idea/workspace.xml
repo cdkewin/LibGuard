@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectsFromGithub/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectsFromGithub/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

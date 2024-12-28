@@ -18,6 +18,7 @@ def main():
 
     clone_repository(link)
     create_requirements_file("./ProjectsFromGithub")
+    display_imported_libraries_from_project(link)
 
 def handle_remove_readonly(func, path, exc_info):
 
@@ -63,6 +64,15 @@ def create_requirements_file(project_path):
     except Exception as e:
         #For any other unexpected errors as a safety net
         print(f"Unexpected error: {e}")
+
+def display_imported_libraries_from_project(link) :
+    # Getting the name of the project for a nicer reading from the user
+    project_name = link.split("/")[-1]
+
+    print(f'\n\tThe imported libraries used in {project_name}\n')
+    with open("./ProjectsFromGithub/requirements.txt", "r") as file:
+        print(file.read())
+
 
 
 if __name__ == "__main__":  #Condition so the script doesn't run if imported as a module only if the main function is called explicitly

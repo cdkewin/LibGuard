@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="optimized the used libraries from the environment and used pip freeze to create the optimized requirements file. fully removed the Project class and its uses. improved repo cloning function so it doesn't get stuck on an infinite loop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectsFromGithub/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectsFromGithub/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="Final Version (documentation added)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735900332179</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final Version (documentation added)">
+      <option name="closed" value="true" />
+      <created>1735903390134</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735903390134</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +133,7 @@
     <MESSAGE value="displaying the imported libraries in the console" />
     <MESSAGE value="removing the project class because i found a better way to use the subprocess and i dont need it anymore. gonna implement a debugging tool embedded in the project for easier use" />
     <MESSAGE value="optimized the used libraries from the environment and used pip freeze to create the optimized requirements file. fully removed the Project class and its uses. improved repo cloning function so it doesn't get stuck on an infinite loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="optimized the used libraries from the environment and used pip freeze to create the optimized requirements file. fully removed the Project class and its uses. improved repo cloning function so it doesn't get stuck on an infinite loop" />
+    <MESSAGE value="Final Version (documentation added)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Version (documentation added)" />
   </component>
 </project>

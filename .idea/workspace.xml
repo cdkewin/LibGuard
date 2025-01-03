@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="displaying the imported libraries in the console">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d7d8a44e-4af3-413e-96e7-0da4cd941011" name="Changes" comment="removing the project class because i found a better way to use the subprocess and i dont need it anymore. gonna implement a debugging tool embedded in the project for easier use">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -104,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735389843573</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="removing the project class because i found a better way to use the subprocess and i dont need it anymore. gonna implement a debugging tool embedded in the project for easier use">
+      <option name="closed" value="true" />
+      <created>1735895755101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735895755102</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +118,7 @@
     <MESSAGE value="implemented the creation of the requirements file without using pip freeze so it only writes the imports used in that project" />
     <MESSAGE value="successfully coded the overwriting of the GitHubProjects" />
     <MESSAGE value="displaying the imported libraries in the console" />
-    <option name="LAST_COMMIT_MESSAGE" value="displaying the imported libraries in the console" />
+    <MESSAGE value="removing the project class because i found a better way to use the subprocess and i dont need it anymore. gonna implement a debugging tool embedded in the project for easier use" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing the project class because i found a better way to use the subprocess and i dont need it anymore. gonna implement a debugging tool embedded in the project for easier use" />
   </component>
 </project>

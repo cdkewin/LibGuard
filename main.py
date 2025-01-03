@@ -4,6 +4,13 @@ import shutil
 import stat
 import subprocess
 import os
+import json
+
+class Project :
+    def __init__(self, libraries):
+        self.libraries = libraries
+    def getLibraries(self):
+        return self.libraries
 
 
 #Taking the input link from the command line using the argparse module due to its automatic type conversion
@@ -16,9 +23,10 @@ def main():
     link = args.url #Storing the url attribute as 'link' for simplicity
 
 
-    clone_repository(link)
-    create_requirements_file("./ProjectsFromGithub")
+  #  clone_repository(link)
+   # create_requirements_file("./ProjectsFromGithub")
     display_imported_libraries_from_project(link)
+    security_check()
 
 def handle_remove_readonly(func, path, exc_info):
 
@@ -65,17 +73,48 @@ def create_requirements_file(project_path):
         #For any other unexpected errors as a safety net
         print(f"Unexpected error: {e}")
 
+
 def display_imported_libraries_from_project(link) :
     # Getting the name of the project for a nicer reading from the user
     project_name = link.split("/")[-1]
 
     print(f'\n\tThe imported libraries used in {project_name}\n')
     with open("./ProjectsFromGithub/requirements.txt", "r") as file:
-        print(file.read())
+        # Using a set we store the libraries and remove copies
+        libraries = set(line.strip() for line in file if line.strip())  # Strip spaces and ignore empty lines
+
+        # Print each library once
+        for library in libraries:
+            print(library)
 
 
+def turn_project_to_object():    # This function will only be called from the security check function which will be called from main
+    with open("./ProjectsFromGithub/requirements.txt", "r") as file:
+        libraries = set(line.strip() for line in file if line.strip())
+    p = Project(libraries)
+    return p
 
-if __name__ == "__main__":  #Condition so the script doesn't run if imported as a module only if the main function is called explicitly
+
+def security_check():
+    project = turn_project_to_object()
+    libraries = project.getLibraries()
+
+    try:
+        result = subprocess.run(
+            ["safety", "check", "-r", "requirements.txt"],
+            cwd="./ProjectsFromGithub",
+            capture_output=True,
+            text=True
+        )
+        if result.returncode == 0:
+            print("No security issues found in the project.")
+        else:
+            print("Security issues detected:")
+            print(result.stdout)  # Print the detected issues
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+if __name__ == "__main__":  # Condition so the script doesn't run if imported as a module only if the main function is called explicitly
     main()
 
 

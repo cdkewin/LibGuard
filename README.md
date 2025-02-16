@@ -1,21 +1,3 @@
-Homework 1: Library Usage and Security Analysis
-Objective:
-Create a Python script that analyzes a public Python project from a GitHub URL, identifies all
-used libraries, and checks for known security issues.
-Requirements:
-1. Command Line Interface:
-The script should accept a GitHub URL as a command-line argument.
-2. Library Analysis:
-Parse all Python files in the project to identify all imported libraries.
-Output the list of imported libraries to the console.
-Ensure that each library is listed only once in the output.
-3. Security Check:
-For each identified library, check for known security issues and list them at the end of
-the output.
-4. Project Constraints:
-Your project must contain a requirements.txt file.
-5. Documentation:
-Add docstrings at each level: package, module, and function.
-6. Version Control:
-Publish your project in a personal Git repository.
-Provide viewing rights to the teachers.
+This project is a Python script designed to analyze Python projects hosted on GitHub. It aims to simplify the process of identifying all the external libraries used within a project and checking for known security vulnerabilities associated with those libraries. By parsing the Python files and examining the requirements.txt file, the script extracts the list of dependencies and cross-references them with a security database to detect any issues that may pose risks to the project's integrity and safety.
+
+The primary objectives of this tool are to streamline dependency management, assist in the identification of potential security threats, and provide a clear, actionable report for developers to address any vulnerabilities. This project is intended to help maintain high standards of code security, particularly for open-source projects, by automating security checks and making it easier to spot problematic libraries.
